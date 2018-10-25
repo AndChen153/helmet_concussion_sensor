@@ -1,14 +1,24 @@
-# helmet_concussion_sensor
-code for raspberry pi zero w and adxl 345 accelerometer to sense g force and inform football coach of severe force on players head in real time
+adxl345-python
+==============
 
-### reason for development
-1. to provide a less expensive alternative of helmet concussion sensors for highschools (materials costing only up to 50 usd for each unit)
-2. provides real time data to coaches during football games to create a safer environment for highschool football players
+Raspberry Pi Python i2c library for the ADXL3453-axis MEMS accelerometer IC which is used in breakout boards like the Adafruit ADXL345 Triple-Axis Accelerometer (http://shop.pimoroni.com/products/adafruit-triple-axis-accelerometer).
 
-### Hardware
-[Raspberry Pi Zero W](https://www.adafruit.com/product/3400), [ADXL 345 accelerometer](https://www.adafruit.com/product/1231), [Pimoroni LiPo SHIM](https://www.adafruit.com/product/3196), and any size 3.7v [lithium ion battery](https://www.adafruit.com/?q=lithihium%20ion)
-[Raspberry Pi 3 B](https://www.adafruit.com/product/3055) for the central server for every Raspberry Pi Zero W
+This library is a basic implementation of the i2c protocol for the IC offering a simple way to get started with it on the Raspberry Pi.
 
-### Networking (connecting the Pi Zero to the Pi 3 B)
-Pi Zero is inside the padding of the football player's helmet and processes all data from the accelerometer in real time and sends a file with severity of the hit to the Pi 3 B which is in the coach's possession 
-Pi Zero is connected pi 3 b through ssh on the same wifi server 
+You can import the module and get a sensor reading like this:
+
+    from adxl345 import ADXL345
+
+    adxl345 = ADXL345()
+
+    axes = adxl345.getAxes(True)
+    print "ADXL345 on address 0x%x:" % (adxl345.address)
+    print "   x = %.3fG" % ( axes['x'] )
+    print "   y = %.3fG" % ( axes['y'] )
+    print "   z = %.3fG" % ( axes['z'] )
+
+or you can run it directly from the command line like this:
+
+    sudo python ADXL345.py
+    
+which will output the current x, y, and z axis readings in Gs.
