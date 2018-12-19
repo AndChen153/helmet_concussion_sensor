@@ -12,5 +12,8 @@ Code for Raspberry Pi Zero W and adxl 345 accelerometer to sense g force and inf
 ### Networking (connecting the Pi Zero to the Pi 3 B)
 The Pi Zero is inside the padding of the football player's helmet and processes all data from the accelerometer in real time and sends a file with the severity of a hit if it is over a certain gForce threshold to the Pi 3 B which is in the coach's possession. The Pi Zero is connected to the Pi 3 B through ssh on the same wifi server.
 
+### Pictures of Raspberry Pi Zero Inside Helmet
+
+
 ### Reason for Discontinuation of Development
 After enxtensive testing with the Lausanne Collegiate School Varisty Football team and lengthy online research I concluded that it would be next to impossible to produce a product that provided accurate readings of concussions without a full scale labratory to test impact forces and times.
