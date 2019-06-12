@@ -1,0 +1,8 @@
+class test():
+    def subtraction(self, num1, num2):
+        print(num1-num2)
+    def addition(self, num1, num2):
+        print(num1+num2)
+
+number = test(1,2)
+number.subtraction()

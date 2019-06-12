@@ -1,0 +1,10 @@
+m=2018
+for x in range (40,100):
+	for y in range (1,70):
+		print ('x' , x)
+		print ('y' , y)
+		med=x**2-y**2
+		print (med)
+		if med==m:
+			print (x , y , 'asdfajwebhajsfbhvhajhjdvasgyukfahsgkeufjhbdagskukhdfkad')
+			quit()
