@@ -1,5 +1,5 @@
 # helmet_concussion_sensor
-##view the abandoned branch to see previous code and the design
+## view the abandoned branch to see previous code and the design
 
 code for raspberry pi zero w and adxl 345 accelerometer
 
