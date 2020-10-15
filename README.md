@@ -16,4 +16,4 @@ The Pi Zero is inside the padding of the football player's helmet and processes 
 ![](Helmet_Concussion_Sensor_Diagram.png)
 
 ### Reason for Discontinuation of Development
-After extensive testing with the Lausanne Collegiate School Varisty Football team and lengthy online research I concluded that it would be next to impossible to produce a product that provided accurate readings of concussions without a full scale labratory to test impact forces and times.
+After extensive testing with the Lausanne Collegiate School Varisty Football team and lengthy online research, I concluded that it would be next to impossible to produce a product that provided accurate readings of concussions without a full scale labratory to test impact forces and times. I could not accurately detect the timings of hits experienced with the onboard clock in the raspberry pi. I could not use accelerometers that had a higher gforce detection ceiling without creating my own libraries or switching to a different platform, which was outside of my ability.
